@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart!go</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7a54dcf4f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/images-removebg-preview.png">
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="img/images-removebg-preview.png" class="logo1" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="cart.html" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>HOME / T-Shirt</h6>
+            <h4>Men's Fashion T-Shirt</h4>
+            <h2>₹1,299.00</h2>
+            <select id="sizeSelect">
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number" value="1" id="quantityInput" min="1">
+            <button class="normal" onclick="addToCart()">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>Premium quality cotton blend t-shirt designed for everyday comfort and style. Features a classic crew neck design with breathable fabric that's perfect for casual wear or light workouts. The soft material ensures all-day comfort while maintaining its shape after multiple washes. Available in various sizes to ensure the perfect fit. Machine washable and pre-shrunk fabric for long-lasting durability. This versatile t-shirt pairs well with jeans, shorts, or casual trousers, making it an essential addition to your wardrobe.
+            </span>
+        </div>
+      
+    </section>
+
+   <section id="product1" class="section-p1">
+    <div class="pro-container">
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/f1.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cotton Casual T-shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,299</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/f2.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Sports Polo Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,599</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/f3.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Premium Graphic Tee</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹999</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/f4.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Running Track Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,799</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/f5.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Fitness Training Top</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,399</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/f6.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Classic Striped Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,199</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/f7.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Outdoor Adventure Tee</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,499</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/f8.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Urban Style T-shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,099</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+    
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/n1.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Performance Tank Top</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹899</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/n2.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Yoga Comfort Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,299</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/n3.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Basketball Jersey</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,999</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/n4.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Casual Crew Neck Tee</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹849</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/n5.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Gym Workout Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,399</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/n6.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Weekend Casual Tee</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹999</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/n7.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Athletic Training Top</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,699</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href= 'sproduct.html';">
+            <img src="img/products/n8.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Summer Comfort Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1,149</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+        </div>
+    </div>
+</section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <P>Get E-mail updates about our latest shop and <span>Special Offers</span></P>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your E-mail address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <p>Copy Right © 2024, Cart!go</p>
+        </div>
+      </footer>
+
+    <script src="myscript.js"></script>
+</body>
+
+</html>
