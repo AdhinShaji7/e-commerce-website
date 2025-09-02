@@ -15,7 +15,6 @@ if (close) {
 }
 
 
-// updated cart.html script
 
 document.addEventListener('DOMContentLoaded', function() {
     displayCartItems();
@@ -70,16 +69,16 @@ function removeItem(index) {
 }
 
 
-// add to cart script
+
 
 function addToCart() {
-    // Get product details
+    
     const productName = document.querySelector('.single-pro-details h4').textContent;
     const productPrice = document.querySelector('.single-pro-details h2').textContent;
     const selectedSize = document.getElementById('sizeSelect').value;
     const quantity = document.getElementById('quantityInput').value;
     
-    // Validation
+
     if (selectedSize === "Select Size") {
         alert("Please select a size!");
         return;
@@ -99,28 +98,27 @@ function addToCart() {
         id: Date.now()
     };
     
-    // Get existing cart from localStorage
+    
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     
-    // Check if same product with same size already exists
     const existingProductIndex = cart.findIndex(item => 
         item.name === product.name && item.size === product.size
     );
     
     if (existingProductIndex > -1) {
-        // Update quantity if product already exists
+       
         cart[existingProductIndex].quantity += parseInt(quantity);
         alert(`Updated quantity for ${productName} (${selectedSize}) in cart!`);
     } else {
-        // Add new product to cart
+       
         cart.push(product);
         alert(`${productName} (${selectedSize}) added to cart!`);
     }
     
-    // Save cart to localStorage
+    
     localStorage.setItem('cart', JSON.stringify(cart));
     
-    // Update cart count if you have a cart counter in your header
+    
     updateCartCount();
 }
 
@@ -128,16 +126,15 @@ function updateCartCount() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
     
-    // Update cart count display (assuming you have an element with class 'cart-count')
+   
     const cartCountElement = document.querySelector('.cart-count');
     if (cartCountElement) {
         cartCountElement.textContent = totalItems;
     }
     
-    console.log(`Total items in cart: ${totalItems}`); // For debugging
+    console.log(`Total items in cart: ${totalItems}`);
 }
 
-// Function to view cart contents (for testing)
 function viewCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     console.log('Current cart contents:', cart);
